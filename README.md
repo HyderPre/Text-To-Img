@@ -46,7 +46,7 @@ cd text-to-image-stable-diffusion
 2. Run the Flask app:
 
 ```bash
-python app.py
+python main.py
 ```
 
 3. Open in your browser:
@@ -67,7 +67,7 @@ A cat wearing sunglasses on a beach
 
 ```
 .
-├── app.py                   # Flask backend
+├── main.py                   # Flask backend
 ├── templates/
 │   └── index.html           # Web interface
 ├── static/
