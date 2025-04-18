@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Enter Prompt to Generate Image</h1>
+    <form method="POST" onsubmit="showLoading()">
+        <input type="text" name="prompt" placeholder="Describe the image..." required>
+        <input type="submit" value="Generate">
+    </form>
+
+    <div id="loading">
+        <p>Generating image... please wait.</p>
+        <div class="spinner"></div>
+    </div>
+
+    {% if image_url %}
+        <h3>Prompt: "{{ prompt }}"</h3>
+        <img src="{{ image_url }}" alt="Generated Image">
+    {% endif %}
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
