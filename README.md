@@ -1,4 +1,4 @@
-# 🖼️ Text-to-Image Generator using Stable Diffusion (DALL·E Alternative)
+# 🖼️ Text-to-Image Generator using Stable Diffusion
 
 A web-based application that generates realistic images from natural language prompts using the **Stable Diffusion** model.  
 Built using **Flask**, **Hugging Face**, and **PyTorch** — a great open-source alternative to DALL·E.
